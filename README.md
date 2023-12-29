@@ -149,7 +149,7 @@ For the rest of the code, check the [SQL_queries.sql](https://github.com/Princek
 CREATE DATABASE IF NOT EXISTS walmartSales;
 
 -- Create table
-CREATE TABLE IF NOT EXISTS sales(
+CREATE TABLE IF NOT EXISTS salestable(
 	invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
     branch VARCHAR(5) NOT NULL,
     city VARCHAR(30) NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS sales(
     product_line VARCHAR(100) NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL,
     quantity INT NOT NULL,
-    tax_pct FLOAT(6,4) NOT NULL,
+    VAT FLOAT(6,4) NOT NULL,
     total DECIMAL(12, 4) NOT NULL,
     date DATETIME NOT NULL,
     time TIME NOT NULL,
