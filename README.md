@@ -146,16 +146,18 @@ For the rest of the code, check the [(walmartsales sql file.sql)(https://github.
 
 ```sql
 -- Create database
-CREATE DATABASE IF NOT EXISTS walmartSales;
+CREATE DATABASE IF NOT EXISTS walmartsales;
+USE walmartsales;
+
 
 -- Create table
 CREATE TABLE IF NOT EXISTS salestable(
-	invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
+    Invoice_ID VARCHAR(30) NOT NULL PRIMARY KEY,
     branch VARCHAR(5) NOT NULL,
     city VARCHAR(30) NOT NULL,
     customer_type VARCHAR(30) NOT NULL,
     gender VARCHAR(30) NOT NULL,
-    product_line VARCHAR(100) NOT NULL,
+    productline VARCHAR(100) NOT NULL,
     unit_price DECIMAL(10,2) NOT NULL,
     quantity INT NOT NULL,
     VAT FLOAT(6,4) NOT NULL,
